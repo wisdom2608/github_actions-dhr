@@ -20,11 +20,17 @@ jobs:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
           
+      - name: Automatic Tagging of Releases
+        id: increment-git-tag
+        run: |
+          chmod +x version.sh
+          ./version.sh -v minor
+        
       - name: Build Docker image
         env:
           DOCKER_HUB_USERNAME: ${{ secrets.DOCKER_HUB_USERNAME }} 
           DOCKER_HUB_REPO_NAME: ${{ secrets.DOCKER_HUB_REPO_NAME }}
-          IMAGE_TAG: ${{ github.sha }}
+          IMAGE_TAG: ${{ steps.increment-git-tag.outputs.git-tag }}
 
         run: |
           docker build -t $DOCKER_HUB_USERNAME/$DOCKER_HUB_REPO_NAME:$IMAGE_TAG .
