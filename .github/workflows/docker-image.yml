@@ -24,7 +24,7 @@ jobs:
         id: increment-git-tag
         run: |
           chmod +x version.sh
-          ./version.sh -v minor
+          ./version.sh -v patch
         
       - name: Build Docker image
         env:
