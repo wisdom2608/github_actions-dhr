@@ -23,8 +23,8 @@ jobs:
       - name: Automatic Tagging of Releases
         id: increment-git-tag
         run: |
-          chmod +x version2.sh
-          ./version2.sh -v patch
+          chmod +x version.sh
+          ./version.sh -v major
         
       - name: Build Docker image
         env:
