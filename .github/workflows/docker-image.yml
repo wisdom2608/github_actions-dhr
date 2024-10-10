@@ -48,7 +48,7 @@ jobs:
 #   - click on "News Access Token"
 #   - In "Access Token Description" box, Put the name you have in the workflows file. Example, DOCKER_HUB_TOKEN. 
 
-# NB: The Workflows action will fail if the "Access Token Description" name is not the same as in the workflows file.concurrency. 
+# NB: The Workflows action will fail if the "Access Token Description" name is not the same as in the workflows file concurrency. 
 
 # 3) Create secrets in github repository. These secrets serve as evnironment variables in the workflows file. 
 #   For environment variables, put the:
