@@ -58,7 +58,7 @@ jobs:
 
 # 4) The version bash files, "version.sh and version2.sh" are version files used for image tag. 
 # - Any of the versions provides a very short image-tag to the image built and pushed to the Docker hub repository. 
-# - These two version files CANNOT be at once. Only one of them should be used in the workflows file.
+# - These two version files CANNOT be used at once. Only one of them should be used in the workflows file.
 # - For "version.sh", the version number parts are 'major', 'minor', and 'patch'.
 # - For "version2.sh", the version number parts are 'Release', 'Hotfix', and 'Patch'.
 
