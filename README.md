@@ -35,3 +35,6 @@ Any of the versions provides a very short image-tag to the image built and pushe
 If the last version number part was'major', then the new one should be 'minor' or 'patch', if your are using "version.sh". If you are using "version2.sh", you should be using 'Release', or 'Hotfix', or 'Patch' for version number part. All depends on you.
 
                                                     #GOOD LUCK !!!
+                                        - [] Nice 1
+                                        - [] Nice 2
+                                        - [] Nice 3
