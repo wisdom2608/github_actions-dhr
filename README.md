@@ -1,6 +1,6 @@
-#Build and push Docker image to Docker hub using github actions.
+**Build and push Docker image to Docker hub using github actions**
 
-          ##Prerequisite 
+**Prerequisite**
 
 1) Create Github Account
   - a) Create  a repository in Github.
@@ -14,7 +14,7 @@
    - click on "News Access Token"
    - In "Access Token Description" box, Put the name you have in the workflows file. Example, DOCKER_HUB_TOKEN. 
 
-# NB: The Workflows action will fail if the "Access Token Description" name is not the same as in the workflows file.concurrency.
+**NB: The Workflows action will fail if the "Access Token Description" name is not the same as in the workflows file.concurrency**
 
 3) Create secrets and env. in github repository. These secrets and evnironment variables shall be used in a workflow file
 
@@ -30,11 +30,11 @@ Any of the versions provides a very short image-tag to the image built and pushe
 - For "version.sh", the version number parts are 'major', 'minor', and 'patch'.
 - For "version2.sh", the version number parts are 'Release', 'Hotfix', and 'Patch'.
 
-# NB: Remember to change the version number part anytime you update your workflows.
+**NB: Remember to change the version number part anytime you update your workflows**
 
 If the last version number part was'major', then the new one should be 'minor' or 'patch', if your are using "version.sh". If you are using "version2.sh", you should be using 'Release', or 'Hotfix', or 'Patch' for version number part. All depends on you.
 
-                                                    #GOOD LUCK !!!
+**GOOD LUCK !!!**
+                                                    
                                         - [] Nice 1
-                                        - [] Nice 2
-                                        - [] Nice 3
+                              
