@@ -36,5 +36,5 @@ If the last version number part was'major', then the new one should be 'minor' o
 
 **GOOD LUCK !!!**
                                                     
-                                        - [] Nice 1
+                                        - [nice 1]
                               
